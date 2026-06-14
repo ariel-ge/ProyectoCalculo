@@ -76,8 +76,12 @@ De lo contrario se instala asi
 ```bash
 pip3 install numpy matplotlib sympy
 ```
+## 📥 Descargar el proyecto
 
-## Ejecutar el proyecto
+[ Descargar ProyectoFinal](https://tu-link.com/ProyectoFinal.zip)
+
+---
+## 3 Ejecutar el proyecto
 
 **WINDOWS**
 ```cmd
