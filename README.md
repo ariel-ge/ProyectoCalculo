@@ -28,12 +28,63 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 
 ---
 
-## 🚀 Instalación
-
-### Requisitos
+# Requisitos
 - Python 3.8 o superior
 - Pip (gestor de paquetes)
 
-### Instalar dependencias
+# Instalación paso a paso
+## 1. Verificar/Instalar Python
+**WINDOWS**
+
+Verificar versión de Python
+```cmd
+python --version
+```
+Si no está instalado, descargar desde: https://www.python.org/downloads/
+
+IMPORTANTE: Marcar "Add Python to PATH" durante la instalación
+
+**LINUX**
+
+Verificar versión de Python
 ```bash
-pip install -r requirements.txt
+python3 --version
+```
+
+Si no está instalado:
+```bash
+sudo apt update
+sudo apt install python3 python3-pip python3-venv
+```
+## 2. Verificar/Instalar librerias
+**WINDOWS**
+Verifica que las librarias esten
+```cmd
+python -c "import numpy, matplotlib, sympy; print('Estan todas las librerías')"
+```
+De lo contrario se instala asi
+```cmd
+pip install numpy matplotlib sympy
+```
+
+**LINUX**
+Verifica que las librarias esten
+```bash
+python3 -c "import numpy, matplotlib, sympy; print('Estan todas las librerías ')"
+```
+De lo contrario se instala asi
+```bash
+pip3 install numpy matplotlib sympy
+```
+
+## Ejecutar el proyecto
+
+**WINDOWS**
+```cmd
+python ProyectoFinal.py
+```
+**LINUX**
+```bash
+python3 ProyectoFinal.py
+```
+
