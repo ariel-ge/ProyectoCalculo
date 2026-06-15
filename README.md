@@ -414,7 +414,7 @@ pip3 install numpy matplotlib sympy
 ```
 ## 📥 Descargar el proyecto
 
-[ Descargar ProyectoFinal](https://github.com/ariel-ge/ProyectoCalculo/blob/ariel-ge-patch-1/ProyectoFinal.py)
+[ Descargar ProyectoFinal](https://github.com/ariel-ge/ProyectoCalculo/blob/ariel-ge-patch-1/proyectofinalc.py)
 
 ---
 ## 3 Ejecutar el proyecto
