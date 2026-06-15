@@ -28,6 +28,121 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 
 ---
 
+### Módulo 1: Crecimiento poblacional (Integración Romberg)
+
+#### Introducción
+
+El estudio de las poblaciones biológicas es un pilar fundamental en la ecología y la biología matemática. Comprender cómo y por qué cambia el número de individuos en una población a lo largo del tiempo permite predecir tendencias, gestionar recursos naturales y planificar estrategias de conservación o control.
+
+Desde una perspectiva matemática, estos cambios siguen patrones que pueden describirse mediante **ecuaciones diferenciales**. Este proyecto demuestra cómo el cálculo integral, específicamente a través del método de **Extrapolación de Romberg**, permite calcular con alta precisión el crecimiento poblacional total en un intervalo de tiempo $[a, b]$, partiendo de la tasa de cambio instantánea de la población.
+
+#### Fundamentos biológicos
+
+**Crecimiento poblacional:** Aumento en el número de organismos que integran una población en un tiempo determinado, debido a tres factores: natalidad, mortalidad y migraciones.
+
+**Natalidad:** Proceso por el cual la población aumenta debido a individuos que nacen.
+
+**Mortalidad:** Número de organismos que mueren, disminuyendo la población.
+
+**Migraciones:** Movimiento de organismos hacia otras regiones (emigración = salida, inmigración = entrada).
+
+En los modelos simplificados (exponencial y logístico), asumimos migraciones nulas (población cerrada), por lo que el cambio neto depende del balance entre natalidad y mortalidad, agrupado en una **tasa de crecimiento intrínseca ($r$)**.
+
+---
+
+#### Método Numérico: Extrapolación de Romberg
+
+Cuando no es posible encontrar una antiderivada analítica, recurrimos a la integración numérica. La **Extrapolación de Romberg** mejora sistemáticamente la aproximación de una integral definida.
+
+**Regla del Trapecio:** Aproxima el área bajo la curva $f(x)$ en $[a, b]$ dividiéndolo en $n$ subintervalos de ancho $h = \frac{b-a}{n}$:
+
+$$
+T(n) = \frac{h}{2} \left[ f(a) + f(b) + 2 \sum_{i=1}^{n-1} f(a + i \cdot h) \right]
+$$
+
+El error es proporcional a $h^2$ (es decir, $\mathcal{O}(h^2)$).
+
+**Extrapolación de Richardson:** Si calculamos la aproximación con paso $h$ y con paso $h/2$, podemos combinar ambas para eliminar el error $\mathcal{O}(h^2)$, obteniendo una nueva aproximación con error $\mathcal{O}(h^4)$. La fórmula general es:
+
+$$
+R_{k,j} = R_{k,j-1} + \frac{R_{k,j-1} - R_{k-1,j-1}}{4^j - 1}
+$$
+
+Donde:
+- $R_{k,0}$ es la Regla del Trapecio con $n = n_0 \cdot 2^k$ subintervalos
+- $R_{k,j}$ es la aproximación refinada en la fila $k$ y columna $j$
+- $4^j - 1$ es el factor de corrección
+
+**Algoritmo de Romberg:** Construye una tabla triangular. Se comienza calculando la primera columna ($j=0$) con la regla del trapecio duplicando subintervalos en cada fila ($k$). Luego se rellenan las columnas siguientes con Richardson. El proceso se detiene cuando:
+
+$$
+|R_{k,k} - R_{k-1,k-1}| < \epsilon
+$$
+
+---
+
+#### Modelado mediante Ecuaciones Diferenciales
+
+Sea $P(t)$ el tamaño de la población en el tiempo $t$.
+
+**1. Crecimiento Natural (Exponencial):** Recursos ilimitados. La tasa de cambio es proporcional al tamaño actual:
+
+$$
+\frac{dP}{dt} = r \cdot P(t)
+$$
+
+Solución analítica: $P(t) = P_0 e^{rt}$
+
+**2. Crecimiento Logístico:** Recursos finitos. Introducimos la **capacidad de carga** $K$ (máximo de individuos que el entorno puede sostener):
+
+$$
+\frac{dP}{dt} = r \cdot P(t) \left(1 - \frac{P(t)}{K}\right)
+$$
+
+Solución analítica: $P(t) = \dfrac{K}{1 + \left(\frac{K - P_0}{P_0}\right)e^{-rt}}$
+
+---
+
+#### Aplicación del Cálculo Integral
+
+El Teorema Fundamental del Cálculo establece que la integral definida de la tasa de cambio en un intervalo $[a, b]$ nos da el cambio neto de la población:
+
+$$
+\Delta P = \int_{a}^{b} \frac{dP}{dt} \, dt = P(b) - P(a)
+$$
+
+En el programa:
+- Modelo exponencial: integramos $f_1(t) = r \cdot P_0 \cdot e^{rt}$
+- Modelo logístico: integramos $f_2(t) = r \cdot P(t) \cdot \left(1 - \frac{P(t)}{K}\right)$
+
+El método de Romberg aproxima el valor numérico de estas integrales definidas con la precisión solicitada.
+
+---
+
+#### Parámetros del programa
+
+| Parámetro | Valor por defecto | Descripción |
+|-----------|-------------------|-------------|
+| $P_0$ | 100.0 | Población inicial (individuos en $t=0$) |
+| $r$ | 0.05 | Tasa de crecimiento intrínseca (5% por unidad de tiempo) |
+| $K$ | 1000.0 | Capacidad de carga (máximo de individuos) |
+| Intervalo | $[0, 10]$ | Tiempo de simulación |
+| Precisión | 6 dígitos | Tolerancia del método de Romberg |
+
+---
+
+#### Ejemplo de salida
+
+Para el modelo logístico en $t \in [0, 10]$, con 4 subintervalos iniciales y 6 dígitos de precisión:
+
+Tabla de Romberg (j=0: Trapecio, extrapolaciones):   
+ k      h      n |    estimaciones ->   
+ 0      2.5     4 |   11.379842  11.379842  
+ 1      1.25    8 |   11.408531  11.418094  11.418094  
+ 2     0.625   16 |   11.415701  11.418091  11.418089  11.418089  
+
+
+
 
 ## Fundamentos matemáticos de los módulos destacados
 ### Módulo 2: Limpiador de señal de telecomunicaciones (filtro pasabajo)
