@@ -22,8 +22,8 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 |--------|-------------|---------------------|
 | 1 | Integración Romberg | Extrapolación de Richardson |
 | 2 | Limpiador de señal (filtro pasabajo) | Convolución + Sumas de Riemann |
-| 3 | Simulación de montaña rusa | Longitud de arco $ L = \int_a^b \sqrt{1 + [f'(x)]^2} \, dx $ |
-| 4 | Análisis de potencia RMS en guitarra eléctrica | Valor eficaz $V_{RMS} = \sqrt{\frac{1}{T} \int_0^T [v(t)]^2 \, dt} $ |
+| 3 | Simulación de montaña rusa | Longitud de arco  |
+| 4 | Análisis de potencia RMS en guitarra eléctrica | Valor eficaz  |
 | 5 | Excedente del consumidor CFE | Área bajo la curva |
 
 ---
@@ -31,14 +31,12 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 ## Módulo 1: Crecimiento poblacional (Integración Romberg)
 
 
-### Módulo 2: Limpiador de señal de telecomunicaciones (filtro pasabajo)
+## Módulo 2: Limpiador de señal de telecomunicaciones (filtro pasabajo)
 
 
+## Módulo 3: Análisis de Potencia RMS(Root MeanSquare) en Señales de Audio
+## Módulo 4: Simulación de montaña Rusa
 
-## Módulo 3: Simulación de montaña rusa
-
-
-## Módulo 4: Análisis de potencia RMS
 
 
 ## Módulo 5: Excedente del consumidor (tarifas CFE)
