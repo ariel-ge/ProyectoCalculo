@@ -46,4 +46,4 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 
 ## Requisitos
 
-[Manual Técnico de Instalación y Ejecución del Proyecto](https://github.com)
+[Manual Técnico de Instalación y Ejecución del Proyecto](https://github.com/arielge/ProyectoCalculo/blob/main/Manual_Tecnico.zip)
