@@ -31,8 +31,8 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 ## Módulo 1: Crecimiento poblacional 
 [Crecimiento Poblacional](https://github.com/ariel-ge/ProyectoCalculo/blob/96fecf061ec7f1b5e6a843f7e0f77240f0c101f3/Crecimiento_Poblacional.zip)
 
-## Módulo 2: Limpiador de señal de telecomunicaciones (filtro pasabajo)
-
+## Módulo 2: Limpiador de señal de telecomunicaciones 
+[ Limpiador de señal de telecomunicaciones](https://github.com/ariel-ge/ProyectoCalculo/blob/d8a0ec59b6ff0bbd2553121bcb68328a86de7438/Limpiador_senal.zip)
 
 ## Módulo 3: Análisis de Potencia RMS(Root MeanSquare) en Señales de Audio
 ## Módulo 4: Simulación de montaña Rusa
