@@ -39,8 +39,8 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 [Analisis de Potencia RMS Root MeanSquare y Simulacion de montana Rusa](https://github.com/ariel-ge/ProyectoCalculo/blob/96fecf061ec7f1b5e6a843f7e0f77240f0c101f3/Analisis_de_Potencia_RMS_Root_MeanSquare__y_Simulacion_de_montana_Rusa.zip)
 
 
-## Módulo 5: Excedente del consumidor (tarifas CFE)
-
+## Módulo 5: Excedente del consumidor eletricidad
+[Excedente del consumidor CFE](https://github.com/ariel-ge/ProyectoCalculo/blob/ce3df17229c56a6e08228d8e1492f8d45f6074ab/Excedente_del_consumidor_CFE.zip)
 
 ---
 
