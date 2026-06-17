@@ -36,7 +36,7 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 
 ## Módulo 3: Análisis de Potencia RMS(Root MeanSquare) en Señales de Audio
 ## Módulo 4: Simulación de montaña Rusa
-[Analisis_de_Potencia_RMS_Root_MeanSquare__y_Simulacion_de_montana_Rusa](https://github.com/ariel-ge/ProyectoCalculo/blob/main/Analisis_de_Potencia_RMS_Root_MeanSquare__y_Simulacion_de_montana_Rusa.zip)
+[Analisis de Potencia RMS Root MeanSquare y Simulacion de montana Rusa](https://github.com/ariel-ge/ProyectoCalculo/blob/main/Analisis_de_Potencia_RMS_Root_MeanSquare__y_Simulacion_de_montana_Rusa.zip)
 
 
 ## Módulo 5: Excedente del consumidor (tarifas CFE)
