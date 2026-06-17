@@ -34,8 +34,7 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 ## Módulo 2: Limpiador de señal de telecomunicaciones 
 [ Limpiador de señal de telecomunicaciones](https://github.com/ariel-ge/ProyectoCalculo/blob/d8a0ec59b6ff0bbd2553121bcb68328a86de7438/Limpiador_senal.zip)
 
-## Módulo 3: Análisis de Potencia RMS(Root MeanSquare) en Señales de Audio
-## Módulo 4: Simulación de montaña Rusa
+## Módulo 3 y 4: Análisis de Potencia RMS(Root MeanSquare) en Señales de Audio y Simulación de montaña Rusa 
 [Analisis de Potencia RMS Root MeanSquare y Simulacion de montana Rusa](https://github.com/ariel-ge/ProyectoCalculo/blob/96fecf061ec7f1b5e6a843f7e0f77240f0c101f3/Analisis_de_Potencia_RMS_Root_MeanSquare__y_Simulacion_de_montana_Rusa.zip)
 
 
@@ -49,4 +48,4 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 [Manual Técnico de Instalación y Ejecución del Proyecto](https://github.com/ariel-ge/ProyectoCalculo/blob/96fecf061ec7f1b5e6a843f7e0f77240f0c101f3/Manual_Tecnico.zip)
 
 ---
-##Descargar Programa
+## Descargar Programa
