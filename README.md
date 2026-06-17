@@ -29,14 +29,14 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 ---
 
 ## Módulo 1: Crecimiento poblacional 
-[Crecimiento Poblacional](https://github.com/ariel-ge/ProyectoCalculo/blob/f842fa0c2f0c8333490fc25604d80de183a75265/Crecimiento_Poblacional.zip)
+[Crecimiento Poblacional](https://github.com/ariel-ge/ProyectoCalculo/blob/96fecf061ec7f1b5e6a843f7e0f77240f0c101f3/Crecimiento_Poblacional.zip)
 
 ## Módulo 2: Limpiador de señal de telecomunicaciones (filtro pasabajo)
 
 
 ## Módulo 3: Análisis de Potencia RMS(Root MeanSquare) en Señales de Audio
 ## Módulo 4: Simulación de montaña Rusa
-[Analisis de Potencia RMS Root MeanSquare y Simulacion de montana Rusa](https://github.com/ariel-ge/ProyectoCalculo/blob/main/Analisis_de_Potencia_RMS_Root_MeanSquare__y_Simulacion_de_montana_Rusa.zip)
+[Analisis de Potencia RMS Root MeanSquare y Simulacion de montana Rusa](https://github.com/ariel-ge/ProyectoCalculo/blob/96fecf061ec7f1b5e6a843f7e0f77240f0c101f3/Analisis_de_Potencia_RMS_Root_MeanSquare__y_Simulacion_de_montana_Rusa.zip)
 
 
 ## Módulo 5: Excedente del consumidor (tarifas CFE)
@@ -46,4 +46,4 @@ Este proyecto implementa **cinco aplicaciones prácticas** basadas en conceptos 
 
 ## Requisitos
 
-[Manual Técnico de Instalación y Ejecución del Proyecto](https://github.com/arielge/ProyectoCalculo/blob/main/Manual_Tecnico.zip)
+[Manual Técnico de Instalación y Ejecución del Proyecto](https://github.com/ariel-ge/ProyectoCalculo/blob/96fecf061ec7f1b5e6a843f7e0f77240f0c101f3/Manual_Tecnico.zip)
